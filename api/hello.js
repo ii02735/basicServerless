@@ -1,5 +1,5 @@
 export default function handler(request, response) {
-    const { name } = req.query;
-    res.status(200).send(`Hello ${name}! There is ${req.query.length} params`);
+    const { name } = request.query;
+    response.status(200).send(`Hello ${name}! There is ${request.query.length} params`);
 }
   
